@@ -4,10 +4,268 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Naploleon Torrico IV</title>
+    <title>Napoleon Torrico IV</title>
     <link href="/src/style.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold">Napoleon Torrico IV</h1>
+  <body
+    class="flex flex-col font-inter px-8 md:px-16 lg:px-32 py-12 bg-linear-to-r from-white/15 via-[#dddddd]/15 to-[#a5a5a5]/15"
+  >
+    <!-- Nav Bar -->
+    <header class="flex w-full justify-end">
+      <a
+        href="/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-2 hover:bg-gray-100 p-2 rounded-lg transition-colors duration-200"
+      >
+        <img class="w-6" src="/src/assets/paperclip.svg" alt="Paperclip" />
+        View Resume
+      </a>
+    </header>
+    <main class="flex flex-col gap-24 mt-12">
+      <!-- Hero Section -->
+      <section class="flex justify-between items-center gap-12">
+        <div class="flex flex-col gap-8 w-3/4 md:w-1/2">
+          <h1 class="text-5xl font-bold">Napoleon Torrico IV</h1>
+          <h2 class="text-2xl">
+            Full-stack developer.
+            <span class="text-dark-gray">Los Angeles, CA.</span>
+          </h2>
+          <img
+            class="md:hidden w-42 h-42 rounded-xl"
+            src="/src/assets/profile.jpeg"
+            alt="Profile picture of Napoleon Torrico IV"
+          />
+          <!-- Social Links -->
+          <ul class="flex gap-4">
+            <li>
+              <a href="https://www.linkedin.com/in/napoleon-torrico-iv/"
+                ><img
+                  class="w-6 hover:scale-105 transition-transform duration-200"
+                  src="/src/assets/linked-in.png"
+                  alt="LinkedIn"
+              /></a>
+            </li>
+            <li>
+              <a href="mailto:napoleontorricoiv@gmail.com">
+                <img
+                  class="w-6 hover:scale-105 transition-transform duration-200"
+                  src="/src/assets/gmail.png"
+                  alt="Gmail"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/nappalion/">
+                <img
+                  class="w-6 hover:scale-105 transition-transform duration-200"
+                  src="/src/assets/github.png"
+                  alt="Github"
+                />
+              </a>
+            </li>
+          </ul>
+          <p>
+            React Native • React • TypeScript • Expo • Express • PostgreSQL •
+            Prisma • Firebase • Android Studio • Jetpack Compose • Figma
+          </p>
+        </div>
+
+        <img
+          class="hidden md:block w-42 h-42 rounded-xl"
+          src="/src/assets/profile.jpeg"
+          alt="Profile picture of Napoleon Torrico IV"
+        />
+      </section>
+
+      <!-- About Me -->
+      <section class="w-full flex flex-col gap-4">
+        <p class="text-dark-gray">
+          <span class="font-semibold text-black">About me.</span> I am a
+          Computer Science graduate with experience in building full-stack
+          applications. I'm currently building PomoTomo, a social study app
+          designed to deliver real-time collaboration through production-ready
+          backend architecture and automated deployment systems.
+        </p>
+        <p class="text-dark-gray">
+          Outside of building and programming, I enjoy watching anime and Marvel
+          movies, playing video games, and spending time with friends and
+          family.
+        </p>
+      </section>
+
+      <!-- My Projects -->
+
+      <section class="flex flex-col w-full lg:items-center">
+        <h3 class="w-full text-left text-3xl font-bold mb-8">My Projects.</h3>
+
+        <div
+          class="lg:w-4/5 xl:w-3/5 flex flex-col pl-16 lg:pl-20 gap-24 border-l-4 border-black"
+        >
+          <!-- PomoTomo -->
+          <article class="flex relative flex-col gap-8 md:flex-row md:gap-12">
+            <img
+              src="/src/assets/button.png"
+              class="w-6 h-6 lg:w-8 lg:h-8 absolute left-0 top-0 -translate-x-19.5 lg:-translate-x-24.5 bg-white rounded-full shadow-md/30"
+              alt="Button Icon"
+            />
+
+            <div class="flex flex-col gap-8">
+              <a
+                class="flex gap-2 text-xl font-semibold"
+                href="https://pomotomoapp.com/"
+                >PomoTomo
+                <img class="w-6" src="/src/assets/link.svg" alt="Link"
+              /></a>
+              <p>
+                React Native • TypeScript • Expo • Express • PostgreSQL • Prisma
+              </p>
+              <p class="text-dark-gray">
+                A full-stack social studying app that uses the Pomodoro
+                technique. It uses WebSockets for live timers, channels, and
+                chat. Add your friends, personalize your profile, and create
+                posts centered around your progress instead of just the finished
+                product.
+              </p>
+            </div>
+            <img
+              class="md:h-[75vh] w-auto rounded-xl object-contain"
+              src="/src/assets/pomotomo.png"
+              alt="PomoTomo app preview"
+            />
+          </article>
+
+          <!-- Icebreak -->
+          <article class="flex relative flex-col gap-8 md:flex-row md:gap-12">
+            <img
+              src="/src/assets/button.png"
+              class="w-6 h-6 lg:w-8 lg:h-8 absolute left-0 top-0 -translate-x-19.5 lg:-translate-x-24.5 bg-white rounded-full shadow-md/30"
+              alt="Button Icon"
+            />
+
+            <div class="flex flex-col gap-8">
+              <a
+                class="flex gap-2 text-xl font-semibold"
+                href="https://github.com/cppsea/icebreak"
+                >Icebreak
+                <img class="w-6" src="/src/assets/link.svg" alt="Link"
+              /></a>
+              <p>React Native • TypeScript • Expo</p>
+              <p class="text-dark-gray">
+                A platform for organizations to interact with their members ,
+                built by the Software Engineering Association club at Cal Poly
+                Pomona. It acts as a central hub for members to be always
+                updated on the latest events while providing features to
+                incentivize member growth.
+              </p>
+            </div>
+            <img
+              class="md:h-[75vh] w-auto rounded-xl object-contain"
+              src="/src/assets/icebreak.png"
+              alt="Icebreak app preview"
+            />
+          </article>
+
+          <!-- Weekly -->
+          <article class="flex relative flex-col gap-8 md:flex-row md:gap-12">
+            <img
+              src="/src/assets/button.png"
+              class="w-6 h-6 lg:w-8 lg:h-8 absolute left-0 top-0 -translate-x-19.5 lg:-translate-x-24.5 bg-white rounded-full shadow-md/30"
+              alt="Button Icon"
+            />
+            <div class="flex flex-col gap-8">
+              <h3
+                class="flex gap-2 text-xl font-semibold"
+                href="https://github.com/cppsea/weekly"
+              >
+                Weekly
+              </h3>
+              <p>Kotlin • Jetpack Compose • Android Studio</p>
+              <p class="text-dark-gray">
+                A social app, built by the Computer Science Society club at Cal
+                Poly Pomona, allowing users to easily plan hangouts. With a
+                built-in calendar, users can view upcoming events and invite
+                friends to them. You can then plan out the details in designated
+                event group chats.
+              </p>
+            </div>
+            <img
+              class="md:h-[75vh] w-auto rounded-xl object-contain"
+              src="/src/assets/weekly.png"
+              alt="Weekly app preview"
+            />
+          </article>
+
+          <!-- Optimal Pallet Configuration -->
+          <article class="flex relative flex-col gap-8 md:flex-row md:gap-12">
+            <img
+              src="/src/assets/button.png"
+              class="w-6 h-6 lg:w-8 lg:h-8 absolute left-0 top-0 -translate-x-19.5 lg:-translate-x-24.5 bg-white rounded-full shadow-md/30"
+              alt="Button Icon"
+            />
+            <div class="flex flex-col gap-8">
+              <h3
+                class="flex gap-2 text-xl font-semibold"
+                href="https://github.com/cppsea/weekly"
+              >
+                Optimal Pallet Configuration
+              </h3>
+              <p>Python • React Native • Google Firebase</p>
+              <p class="text-dark-gray">
+                A pallet configuration algorithm focused on determining the
+                correct orientation to stack boxes on a 40”x48”x52” pallet.
+                Pallet calculations are saved to a database for faster load
+                times and then are rendered with the Three.js library.
+              </p>
+            </div>
+            <img
+              class="md:h-[75vh] w-auto rounded-xl object-contain"
+              src="/src/assets/pallet-app.png"
+              alt="Optimal Pallet Configuration app preview"
+            />
+          </article>
+        </div>
+      </section>
+
+      <footer class="flex flex-col gap-4 items-center">
+        <ul class="flex gap-4 ml-4">
+          <li>
+            <a href="https://www.linkedin.com/in/napoleon-torrico-iv/"
+              ><img
+                class="w-6 hover:scale-105 transition-transform duration-200"
+                src="/src/assets/linked-in-black.png"
+                alt="LinkedIn"
+            /></a>
+          </li>
+          <li>
+            <a href="mailto:napoleontorricoiv@gmail.com">
+              <img
+                class="w-6 hover:scale-105 transition-transform duration-200"
+                src="/src/assets/gmail-black.png"
+                alt="Gmail"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/nappalion/">
+              <img
+                class="w-6 hover:scale-105 transition-transform duration-200"
+                src="/src/assets/github.png"
+                alt="Github"
+              />
+            </a>
+          </li>
+        </ul>
+
+        <p class="text-dark-gray">
+          Made by Napoleon Torrico IV. View the source code on
+          <a
+            href="https://github.com/nappalion/portfolio-website"
+            class="underline hover:text-gray-700 transition-colors duration-200"
+            >GitHub</a
+          >.
+        </p>
+      </footer>
+    </main>
   </body>
 </html>
