@@ -4,4 +4,6 @@
 @theme {
   --font-inter: "Inter", sans-serif;
   --color-dark-gray: #676767;
+  --breakpoint-smmd: 768px;
+  --breakpoint-tablet: 1200px;
 }

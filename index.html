@@ -22,26 +22,30 @@
         View Resume
       </a>
     </header>
-    <main class="flex flex-col gap-24 mt-12">
+    <main class="flex flex-col gap-20 mt-12">
       <!-- Hero Section -->
       <section class="flex justify-between items-center gap-12">
-        <div class="flex flex-col gap-8 w-3/4 md:w-1/2">
-          <h1 class="text-5xl font-bold">Napoleon Torrico IV</h1>
+        <div class="flex flex-col gap-8 md:w-3/4 lg:w-1/2">
+          <div class="flex gap-4 items-stretch">
+            <img
+              class="md:hidden w-24 h-24 rounded-xl object-cover"
+              src="/src/assets/profile.jpeg"
+              alt="Profile picture of Napoleon Torrico IV"
+            />
+            <h1 class="text-4xl md:text-5xl font-bold">Napoleon Torrico IV</h1>
+          </div>
+
           <h2 class="text-2xl">
             Full-stack developer.
             <span class="text-dark-gray">Los Angeles, CA.</span>
           </h2>
-          <img
-            class="md:hidden w-42 h-42 rounded-xl"
-            src="/src/assets/profile.jpeg"
-            alt="Profile picture of Napoleon Torrico IV"
-          />
+
           <!-- Social Links -->
-          <ul class="flex gap-4">
+          <ul class="hidden md:flex gap-6">
             <li>
               <a href="https://www.linkedin.com/in/napoleon-torrico-iv/"
                 ><img
-                  class="w-6 hover:scale-105 transition-transform duration-200"
+                  class="w-8 md:w-6 hover:scale-105 transition-transform duration-200"
                   src="/src/assets/linked-in.png"
                   alt="LinkedIn"
               /></a>
@@ -49,7 +53,7 @@
             <li>
               <a href="mailto:napoleontorricoiv@gmail.com">
                 <img
-                  class="w-6 hover:scale-105 transition-transform duration-200"
+                  class="w-8 md:w-6 hover:scale-105 transition-transform duration-200"
                   src="/src/assets/gmail.png"
                   alt="Gmail"
                 />
@@ -58,7 +62,7 @@
             <li>
               <a href="https://github.com/nappalion/">
                 <img
-                  class="w-6 hover:scale-105 transition-transform duration-200"
+                  class="w-8 md:w-6 hover:scale-105 transition-transform duration-200"
                   src="/src/assets/github.png"
                   alt="Github"
                 />
@@ -69,6 +73,36 @@
             React Native • React • TypeScript • Expo • Express • PostgreSQL •
             Prisma • Firebase • Android Studio • Jetpack Compose • Figma
           </p>
+
+          <!-- Social Links -->
+          <ul class="flex md:hidden gap-6">
+            <li>
+              <a href="https://www.linkedin.com/in/napoleon-torrico-iv/"
+                ><img
+                  class="w-8 md:w-6 hover:scale-105 transition-transform duration-200"
+                  src="/src/assets/linked-in.png"
+                  alt="LinkedIn"
+              /></a>
+            </li>
+            <li>
+              <a href="mailto:napoleontorricoiv@gmail.com">
+                <img
+                  class="w-8 md:w-6 hover:scale-105 transition-transform duration-200"
+                  src="/src/assets/gmail.png"
+                  alt="Gmail"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/nappalion/">
+                <img
+                  class="w-8 md:w-6 hover:scale-105 transition-transform duration-200"
+                  src="/src/assets/github.png"
+                  alt="Github"
+                />
+              </a>
+            </li>
+          </ul>
         </div>
 
         <img
@@ -99,133 +133,201 @@
       <section class="flex flex-col w-full lg:items-center">
         <h3 class="w-full text-left text-3xl font-bold mb-8">My Projects.</h3>
 
-        <div
-          class="lg:w-4/5 xl:w-3/5 flex flex-col pl-16 lg:pl-20 gap-24 border-l-4 border-black"
-        >
+        <div class="w-full lg:w-7/8 flex flex-col">
           <!-- PomoTomo -->
-          <article class="flex relative flex-col gap-8 md:flex-row md:gap-12">
-            <img
-              src="/src/assets/button.png"
-              class="w-6 h-6 lg:w-8 lg:h-8 absolute left-0 top-0 -translate-x-19.5 lg:-translate-x-24.5 bg-white rounded-full shadow-md/30"
-              alt="Button Icon"
-            />
+          <article
+            class="grid grid-cols-[40px_1fr] tablet:grid-cols-[145px_40px_1fr] md:flex-row gap-8 lg:gap-12"
+          >
+            <p
+              class="hidden tablet:block w-full text-sm text-dark-gray md:py-50"
+            >
+              Jan 2025 - Present
+            </p>
 
-            <div class="flex flex-col gap-8">
-              <a
-                class="w-fit flex gap-2 text-xl font-semibold hover:scale-105 hover:translate-x-1 transition-transform"
-                href="https://pomotomoapp.com/"
-                >PomoTomo
-                <img class="w-6" src="/src/assets/link.svg" alt="Link"
-              /></a>
-              <p>
-                React Native • TypeScript • Expo • Express • PostgreSQL • Prisma
-              </p>
-              <p class="text-dark-gray">
-                A full-stack social studying app that uses the Pomodoro
-                technique. It uses WebSockets for live timers, channels, and
-                chat. Add your friends, personalize your profile, and create
-                posts centered around your progress instead of just the finished
-                product.
-              </p>
+            <div class="relative flex justify-center md:py-48">
+              <div class="absolute top-0 bottom-0 w-1 bg-black"></div>
+              <img
+                src="/src/assets/button.png"
+                class="w-6 h-6 lg:w-8 lg:h-8 z-10 rounded-full shadow-md/30"
+                alt="Button Icon"
+              />
             </div>
-            <img
-              class="md:h-[75vh] w-auto rounded-xl object-contain"
-              src="/src/assets/pomotomo.png"
-              alt="PomoTomo app preview"
-            />
+
+            <div class="flex flex-col md:flex-row gap-8">
+              <div class="flex flex-col gap-8 md:py-48 min-w-64">
+                <a
+                  class="w-fit flex gap-2 text-xl font-semibold hover:scale-105 hover:translate-x-1 transition-transform"
+                  href="https://pomotomoapp.com/"
+                  >PomoTomo
+                  <img class="w-6" src="/src/assets/link.svg" alt="Link"
+                /></a>
+
+                <p class="tablet:hidden w-full text-sm text-dark-gray pt-2">
+                  Jan 2025 - Present
+                </p>
+                <p>
+                  React Native • TypeScript • Expo • Express • PostgreSQL •
+                  Prisma
+                </p>
+                <p class="text-dark-gray">
+                  A full-stack social studying app that uses the Pomodoro
+                  technique. It uses WebSockets for live timers, channels, and
+                  chat. Add your friends, personalize your profile, and create
+                  posts centered around your progress instead of just the
+                  finished product.
+                </p>
+              </div>
+              <img
+                class="self-start h-[55vh] smmd:h-[75vh] w-auto rounded-xl object-contain mb-32"
+                src="/src/assets/pomotomo.png"
+                alt="PomoTomo app preview"
+              />
+            </div>
           </article>
 
           <!-- Icebreak -->
-          <article class="flex relative flex-col gap-8 md:flex-row md:gap-12">
-            <img
-              src="/src/assets/button.png"
-              class="w-6 h-6 lg:w-8 lg:h-8 absolute left-0 top-0 -translate-x-19.5 lg:-translate-x-24.5 bg-white rounded-full shadow-md/30"
-              alt="Button Icon"
-            />
+          <article
+            class="grid grid-cols-[40px_1fr] tablet:grid-cols-[145px_40px_1fr] md:flex-row gap-8 lg:gap-12"
+          >
+            <p
+              class="hidden tablet:block w-full text-sm text-dark-gray md:py-50"
+            >
+              Sep 2022 - Dec 2023
+            </p>
 
-            <div class="flex flex-col gap-8">
-              <a
-                class="inline-flex items-center gap-2 text-xl font-semibold hover:scale-105 hover:translate-x-1 transition-transform"
-                href="https://github.com/cppsea/icebreak"
-                >Icebreak
-                <img class="w-6" src="/src/assets/link.svg" alt="Link"
-              /></a>
-              <p>React Native • TypeScript • Expo</p>
-              <p class="text-dark-gray">
-                A platform for organizations to interact with their members ,
-                built by the Software Engineering Association club at Cal Poly
-                Pomona. It acts as a central hub for members to be always
-                updated on the latest events while providing features to
-                incentivize member growth.
-              </p>
+            <div class="relative flex justify-center md:py-48">
+              <div class="absolute top-0 bottom-0 w-1 bg-black"></div>
+              <img
+                src="/src/assets/button.png"
+                class="w-6 h-6 lg:w-8 lg:h-8 z-10 rounded-full shadow-md/30"
+                alt="Button Icon"
+              />
             </div>
-            <img
-              class="md:h-[75vh] w-auto rounded-xl object-contain"
-              src="/src/assets/icebreak.png"
-              alt="Icebreak app preview"
-            />
+
+            <div class="flex flex-col md:flex-row gap-8">
+              <div class="flex flex-col gap-8 md:py-48 min-w-64">
+                <a
+                  class="w-fit flex gap-2 text-xl font-semibold hover:scale-105 hover:translate-x-1 transition-transform"
+                  href="https://pomotomoapp.com/"
+                  >Icebreak
+                  <img class="w-6" src="/src/assets/link.svg" alt="Link"
+                /></a>
+
+                <p class="tablet:hidden w-full text-sm text-dark-gray pt-2">
+                  Sep 2022 - Dec 2023
+                </p>
+                <p>React Native • TypeScript • Expo</p>
+                <p class="text-dark-gray">
+                  A platform for organizations to interact with their members ,
+                  built by the Software Engineering Association club at Cal Poly
+                  Pomona. It acts as a central hub for members to be always
+                  updated on the latest events while providing features to
+                  incentivize member growth.
+                </p>
+              </div>
+              <img
+                class="self-start h-[55vh] smmd:h-[75vh] w-auto rounded-xl object-contain mb-32"
+                src="/src/assets/icebreak.png"
+                alt="Icebreak app preview"
+              />
+            </div>
           </article>
 
           <!-- Weekly -->
-          <article class="flex relative flex-col gap-8 md:flex-row md:gap-12">
-            <img
-              src="/src/assets/button.png"
-              class="w-6 h-6 lg:w-8 lg:h-8 absolute left-0 top-0 -translate-x-19.5 lg:-translate-x-24.5 bg-white rounded-full shadow-md/30"
-              alt="Button Icon"
-            />
-            <div class="flex flex-col gap-8">
-              <h3
-                class="flex gap-2 text-xl font-semibold"
-                href="https://github.com/cppsea/weekly"
-              >
-                Weekly
-              </h3>
-              <p>Kotlin • Jetpack Compose • Android Studio</p>
-              <p class="text-dark-gray">
-                A social app, built by the Computer Science Society club at Cal
-                Poly Pomona, allowing users to easily plan hangouts. With a
-                built-in calendar, users can view upcoming events and invite
-                friends to them. You can then plan out the details in designated
-                event group chats.
-              </p>
+          <article
+            class="grid grid-cols-[40px_1fr] tablet:grid-cols-[145px_40px_1fr] md:flex-row gap-8 lg:gap-12"
+          >
+            <p
+              class="hidden tablet:block w-full text-sm text-dark-gray md:py-50"
+            >
+              Feb 2022 - Jun 2023
+            </p>
+
+            <div class="relative flex justify-center md:py-48">
+              <div class="absolute top-0 bottom-0 w-1 bg-black"></div>
+              <img
+                src="/src/assets/button.png"
+                class="w-6 h-6 lg:w-8 lg:h-8 z-10 rounded-full shadow-md/30"
+                alt="Button Icon"
+              />
             </div>
-            <img
-              class="md:h-[75vh] w-auto rounded-xl object-contain"
-              src="/src/assets/weekly.png"
-              alt="Weekly app preview"
-            />
+
+            <div class="flex flex-col md:flex-row gap-8">
+              <div class="flex flex-col gap-8 md:py-48 min-w-64">
+                <h3
+                  class="w-fit flex gap-2 text-xl font-semibold hover:scale-105 hover:translate-x-1 transition-transform"
+                >
+                  Weekly
+                  <img class="w-6" src="/src/assets/link.svg" alt="Link" />
+                </h3>
+
+                <p class="tablet:hidden w-full text-sm text-dark-gray pt-2">
+                  Feb 2022 - Jun 2023
+                </p>
+                <p>Kotlin • Jetpack Compose • Android Studio</p>
+                <p class="text-dark-gray">
+                  A social app allowing users to easily plan hangouts. With a
+                  built-in calendar, users can view upcoming events and invite
+                  friends to them. You can then plan out the details in
+                  designated event group chats.
+                </p>
+              </div>
+              <img
+                class="self-start h-[55vh] smmd:h-[75vh] w-auto rounded-xl object-contain mb-32"
+                src="/src/assets/weekly.png"
+                alt="Weekly app preview"
+              />
+            </div>
           </article>
 
           <!-- Optimal Pallet Configuration -->
-          <article class="flex relative flex-col gap-8 md:flex-row md:gap-12">
-            <img
-              src="/src/assets/button.png"
-              class="w-6 h-6 lg:w-8 lg:h-8 absolute left-0 top-0 -translate-x-19.5 lg:-translate-x-24.5 bg-white rounded-full shadow-md/30"
-              alt="Button Icon"
-            />
-            <div class="flex flex-col gap-8">
-              <a
-                class="text-xl font-semibold hover:scale-105 hover:translate-x-1 transition-transform"
-                href="https://github.com/nappalion/pallet-app-expo"
-                >Optimal Pallet Configuration
-                <img
-                  class="w-6 pb-0.5 inline-block"
-                  src="/src/assets/link.svg"
-                  alt="Link"
-              /></a>
-              <p>Python • React Native • Google Firebase</p>
-              <p class="text-dark-gray">
-                A pallet configuration algorithm focused on determining the
-                correct orientation to stack boxes on a 40”x48”x52” pallet.
-                Pallet calculations are saved to a database for faster load
-                times and then are rendered with the Three.js library.
-              </p>
+          <article
+            class="grid grid-cols-[40px_1fr] tablet:grid-cols-[145px_40px_1fr] md:flex-row gap-8 lg:gap-12"
+          >
+            <p
+              class="hidden tablet:block w-full text-sm text-dark-gray md:py-50"
+            >
+              Nov 2022 - Feb 2023
+            </p>
+
+            <div class="relative flex justify-center md:py-48">
+              <div class="absolute top-0 bottom-0 w-1 bg-black"></div>
+              <img
+                src="/src/assets/button.png"
+                class="w-6 h-6 lg:w-8 lg:h-8 z-10 rounded-full shadow-md/30"
+                alt="Button Icon"
+              />
             </div>
-            <img
-              class="md:h-[75vh] w-auto rounded-xl object-contain"
-              src="/src/assets/pallet-app.png"
-              alt="Optimal Pallet Configuration app preview"
-            />
+
+            <div class="flex flex-col md:flex-row gap-8">
+              <div class="flex flex-col gap-8 md:py-48 min-w-64">
+                <a
+                  class="text-xl font-semibold hover:scale-105 hover:translate-x-1 transition-transform"
+                  href="https://github.com/nappalion/pallet-app-expo"
+                  >Optimal Pallet Configuration
+                  <img
+                    class="w-6 pb-0.5 inline-block"
+                    src="/src/assets/link.svg"
+                    alt="Link"
+                /></a>
+
+                <p class="tablet:hidden w-full text-sm text-dark-gray pt-2">
+                  Nov 2022 - Feb 2023
+                </p>
+                <p>Python • React Native • Google Firebase</p>
+                <p class="text-dark-gray">
+                  A pallet configuration algorithm focused on determining the
+                  correct orientation to stack boxes on a 40”x48”x52” pallet.
+                  Pallet calculations are saved to a database for faster load
+                  times and then are rendered with the Three.js library.
+                </p>
+              </div>
+              <img
+                class="self-start h-[55vh] smmd:h-[75vh] w-auto rounded-xl object-contain mb-32"
+                src="/src/assets/pallet-app.png"
+                alt="Optimal Pallet Configuration app preview"
+              />
+            </div>
           </article>
         </div>
       </section>
